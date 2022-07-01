@@ -1,0 +1,172 @@
+body{
+   
+    margin: 0px;
+    text-align: center;
+    background-repeat:repeat-x;
+    background-color: rgb(232, 232, 232);
+}
+
+h1{
+    color: black;
+    margin: 0 auto; 
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Nunito', sans-serif;
+}
+
+h3{
+    font-family: 'Nunito', sans-serif;
+}
+
+.header{
+    padding-top: 80px;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.introduction{
+    color: black;
+    position: relative;
+    padding-top: 70px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.menu-bar{
+    background-color:transparent;
+	border-radius:28px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:25px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #080808;
+    margin: 10px;
+
+}
+.menu-bar:hover {
+	background-color:black;
+    color: white;
+}
+.menu-bar:active {
+	position:relative;
+	top:1px;
+}
+
+.header-image{
+    width: 100%;
+    height: 550px;
+
+}
+
+.menu-position{
+    position: relative;
+    padding-top: 20px;
+}
+
+.middle-container{
+    position: relative;
+    display: inline-block;
+    top:200px;
+    width: 100%;
+    height: 600px ;
+    background-color: #282828;
+}
+
+#help{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    position: absolute;
+    padding: 20px;
+    padding-top: 40px;
+    font-size: 40px;
+}
+.jar-collection{
+    position: relative;
+    right:20%;
+    top:50px;
+}
+
+
+.car-coll{
+    position: relative;
+    top:35px;
+}
+.car-info{
+    position:absolute;
+    bottom:40px;
+    left:29%;
+    border:2px solid white;
+    border-radius:20%;
+    background-color:rgb(255, 255, 255);
+    font-size: 30px;
+    color: black;
+}
+.text-info{
+    padding: 15px;
+}
+
+.weapon{
+    position: relative;
+    left:15%;
+    top:35px;
+}
+.weapon-info{
+    position:absolute;
+    bottom:40px;
+    left:63%;
+    border:2px solid white;
+    border-radius:20%;
+    background-color:rgb(255, 255, 255);
+    font-size: 30px;
+    color: black;
+}
+.bottom-container{
+    position: relative;
+    display: inline-block;
+    top:300px;
+    padding: 30px;
+}
+.report-pic{
+    padding: 30px;
+    width: 400px;
+}
+#report{
+    padding-bottom: 50px;
+    text-align: center;
+}
+#first-p{
+    font-size: 30px;
+}
+.report-pic:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contact{
+    position: relative;
+    top:400px;
+    background-color: #a2a2a2;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 15px 0px 15px 0px ;
+}
+.lang{
+    position: absolute;
+    top: 20px;
+    padding-left: 10px;
+}
+#motivation{
+     font-family: 'Nunito', sans-serif;
+     padding-top: 30px;
+}
