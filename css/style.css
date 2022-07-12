@@ -89,28 +89,6 @@ p{
     font-size: 40px;
     padding-left: 40px;
 }
-.jar-collection{
-    position: relative;
-    right:20%;
-    top:50px;
-}
-.car-coll{
-    position: relative;
-    top:35px;
-}
-.car-info{
-    position:absolute;
-    bottom:40px;
-    left:29%;
-    border:2px solid white;
-    border-radius:20%;
-    background-color:rgb(255, 255, 255);
-    font-size: 30px;
-    color: black;
-}
-.text-info{
-    padding: 15px;
-}
 
 .weapon{
     position:absolute;
@@ -185,9 +163,7 @@ p{
     position: relative;
     background-color:transparent;
 	border-radius:28px;
-	border:1px solid #ffffff;
-    
-
+	border:1px solid #ffffff;    
 }
 #donation-options{
     position: absolute;
@@ -231,4 +207,5 @@ p{
 }
 #paypal{
     color:white;
+
 }
