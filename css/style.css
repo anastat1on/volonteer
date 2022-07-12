@@ -161,10 +161,23 @@ p{
      padding-top: 30px;
 }
 
-.header-payment-image{
-    width: 100%;
-    height: 600px;
-    filter: grayscale(100%);
+.side-bar{
+    position: relative;
+    width: 25%;
+    height: 1100px;
+    background-color: black;
+}
+#donaty{
+    position: absolute;
+    text-align: center;
+    margin-top: 0px;
+    padding: 60px;
+    color: white;
+    font-size: 40px;
+    border: 0px;
+    border-style:solid;
+    border-bottom-width: 3px;
+    right: 25%;
 
      margin-bottom: 70px;
 }
@@ -173,6 +186,23 @@ p{
     background-color:transparent;
 	border-radius:28px;
 	border:1px solid #ffffff;
+    
+
+}
+#donation-options{
+    position: absolute;
+    margin-top: 60%;
+    text-align: center;
+    color: white;
+    right: 31%;
+
+}
+.option{
+    font-size: 30px;
+    margin-bottom: 40px;
+    background-color:transparent;
+	border-radius:28px;
+	border:1px solid #fffcfc;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
@@ -190,4 +220,15 @@ p{
 .donaty:active {
 	position:relative;
 	top:1px;
+	text-shadow:0px 1px 0px #fffcfc;
+}
+.option:hover{
+    background-color: white;
+    color: black;
+}
+#mono{
+    color: white;
+}
+#paypal{
+    color:white;
 }

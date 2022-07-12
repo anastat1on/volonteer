@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="help.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sacramento&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+      <div class="side-bar">
+          <p id="donaty">
+            Донати</p>
+          <div id="donation-options">
+            <p class="option" onclick="myFunction()" >Moнобанк</p>
+            <p class="option" onclick="myFunction1()">PayPal</p>
+            <p class="option">USDT $</p>
+            <p class="option">Swift</p>
+
+          </div>
+          <div id="mono"> TEST TEXT DISPLAY</div>
+          <div id="paypal"> Close the previous and show a new one</div>
+          <script>
+            function myFunction() {
+              var x = document.getElementById("mono");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+          </script>
+          <script>
+            function myFunction1() {
+              var x = document.getElementById("paypal");
+              if (x.style.display === "block"){
+                x.style.display = "none"
+              }
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } 
+              else{
+                x.style.display = "none";
+              }
+            }
+          </script>
+      </div>
+  </body>
+</html>
