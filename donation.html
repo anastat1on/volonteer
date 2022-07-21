@@ -14,42 +14,80 @@
 
   </head>
   <body>
+    <div>
       <div class="side-bar">
-          <p id="donaty">
-            Донати</p>
+          <div id="donaty-page">
+            Донати</div>
           <div id="donation-options">
-            <p class="option" onclick="myFunction()" >Moнобанк</p>
-            <p class="option" onclick="myFunction1()">PayPal</p>
-            <p class="option">USDT $</p>
-            <p class="option">Swift</p>
-
-          </div>
-          <div id="mono"> TEST TEXT DISPLAY</div>
-          <div id="paypal"> Close the previous and show a new one</div>
-          <script>
-            function myFunction() {
-              var x = document.getElementById("mono");
-              if (x.style.display === "none") {
-                x.style.display = "block";
-              } else {
-                x.style.display = "none";
+            <p class="option"  onclick="myFunction_Mono()" >Moнобанк</p>
+            <p class="option"  onclick="myFunction_Paypal()">PayPal</p>
+            <p class="option"  onclick="myFunction_Usdt()">USDT $</p>
+            <p class="option"  onclick="myFunction_Swift()">Swift</p>
+            <script>
+              function myFunction_Mono() {
+                let monobank_button = document.getElementById("mono");
+                let paypal_button = document.getElementById("paypal");
+                let usdt_button = document.getElementById("usdt");
+                let swift_button = document.getElementById("swift");
+                if (monobank_button.style.display === "none") {
+                    monobank_button.style.display = "block";
+                    paypal_button.style.display = "none";
+                    usdt_button.style.display = "none";
+                    swift_button.style.display = "none"
+                  } 
               }
-            }
-          </script>
-          <script>
-            function myFunction1() {
-              var x = document.getElementById("paypal");
-              if (x.style.display === "block"){
-                x.style.display = "none"
-              }
-              if (x.style.display === "none") {
-                x.style.display = "block";
-              } 
-              else{
-                x.style.display = "none";
-              }
-            }
-          </script>
+            </script>
+            <script>
+              function myFunction_Paypal(){
+                let monobank_button = document.getElementById("mono");
+                let paypal_button = document.getElementById("paypal");
+                let usdt_button = document.getElementById("usdt");
+                let swift_button = document.getElementById("swift");
+                if (paypal_button.style.display === "none") {
+                    monobank_button.style.display = "none";
+                    paypal_button.style.display = "block";
+                    usdt_button.style.display = "none";
+                    swift_button.style.display = "none"
+                  } 
+                }
+    
+            </script>
+            <script>
+              function myFunction_Usdt(){
+                let monobank_button = document.getElementById("mono");
+                let paypal_button = document.getElementById("paypal");
+                let usdt_button = document.getElementById("usdt");
+                let swift_button = document.getElementById("swift");
+                if (usdt_button.style.display === "none") {
+                    usdt_button.style.display = "block";
+                    monobank_button.style.display = "none";
+                    paypal_button.style.display = "none";
+                    swift_button.style.display = "none"
+                    } 
+                  }
+            </script>
+            <script>
+                function myFunction_Swift(){
+                  let monobank_button = document.getElementById("mono");
+                  let paypal_button = document.getElementById("paypal");
+                  let usdt_button = document.getElementById("usdt");
+                  let swift_button = document.getElementById("swift");
+                  if (swift_button.style.display === "none") {
+                      monobank_button.style.display = "none";
+                      paypal_button.style.display = "none";
+                      usdt_button.style.display = "none";
+                      swift_button.style.display = "block"
+                    } 
+                  }
+              </script>
+        </div>
+      <div id="mono" style="display: none"> 
+            <img src="image/hearts.png">
       </div>
+      <div id="paypal" style="display: none"> paypal display</div>
+      <div id="usdt" style="display: none"> usdt display</div>
+      <div id="swift" style="display: none"> swift dispay </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -89,28 +89,6 @@ p{
     font-size: 40px;
     padding-left: 40px;
 }
-.jar-collection{
-    position: relative;
-    right:20%;
-    top:50px;
-}
-.car-coll{
-    position: relative;
-    top:35px;
-}
-.car-info{
-    position:absolute;
-    bottom:40px;
-    left:29%;
-    border:2px solid white;
-    border-radius:20%;
-    background-color:rgb(255, 255, 255);
-    font-size: 30px;
-    color: black;
-}
-.text-info{
-    padding: 15px;
-}
 
 .weapon{
     position:absolute;
@@ -159,26 +137,6 @@ p{
 #motivation{
      font-family: 'Nunito', sans-serif;
      padding-top: 30px;
-}
-
-.side-bar{
-    position: relative;
-    width: 25%;
-    height: 1100px;
-    background-color: black;
-}
-#donaty{
-    position: absolute;
-    text-align: center;
-    margin-top: 0px;
-    padding: 60px;
-    color: white;
-    font-size: 40px;
-    border: 0px;
-    border-style:solid;
-    border-bottom-width: 3px;
-    right: 25%;
-
      margin-bottom: 70px;
 }
 .donaty{
@@ -186,20 +144,57 @@ p{
     background-color:transparent;
 	border-radius:28px;
 	border:1px solid #ffffff;
-    
-
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:25px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin: 10px;
+	border:1px solid #ffffff;    
 }
+
+.donaty:hover {
+	background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.donaty:active {
+	position:relative;
+	top:1px;
+	text-shadow:0px 1px 0px #fffcfc;
+}
+.side-bar{
+    position: relative;
+    width: 350px;
+    height: 1100px;
+    padding-left: 20px;
+    background-color: black;
+}
+   
+#donaty-page{
+    position: absolute;
+    text-align: center;
+    margin-top: 0px;
+    padding: 70px;
+    color: white;
+    font-size: 40px;
+    border: 0px;
+    border-style:solid;
+    border-bottom-width: 3px;
+    right: 18%;
+    margin-bottom: 70px;
+}
+
 #donation-options{
     position: absolute;
     margin-top: 60%;
     text-align: center;
     color: white;
-    right: 31%;
-
+    right: 25%;
 }
 .option{
     font-size: 30px;
-    margin-bottom: 40px;
     background-color:transparent;
 	border-radius:28px;
 	border:1px solid #fffcfc;
@@ -211,24 +206,30 @@ p{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffffff;
     margin: 10px;
+    margin-bottom: 40%;
+    margin-top: 50%;
 
-}
-.donaty:hover {
-	background-color:rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-}
-.donaty:active {
-	position:relative;
-	top:1px;
-	text-shadow:0px 1px 0px #fffcfc;
 }
 .option:hover{
     background-color: white;
     color: black;
 }
 #mono{
+    position: relative;
+    align-items: center;
+    left: 50%;
     color: white;
+    width: inherit;
 }
+
+    
 #paypal{
+    color:rgb(255, 255, 255);
+}
+#usdt{
     color:white;
+}
+#swift{
+    color:white;
+
 }
