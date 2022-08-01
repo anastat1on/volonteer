@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="help.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Sacramento&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+        <div>
+          <div id="mono" style="display: none"> 
+            <img src="image/hearts.png" width="600">
+            <div > 
+              <a href="https://send.monobank.ua/jar/6pyD8sUnDR" style="text-decoration: none" id="mono-link" >Баночка допомоги</a>
+            </div>
+        </div>
+        <div id="paypal" style="display: none"> 
+          <img src="image/paypal (1).png" width="600">
+          <div > 
+            <a href="https://www.paypal.com/myaccount/transfer/homepage" style="text-decoration: none" id="paypal-link" >PayPal</a>
+          </div>
+        </div>
+        <div id="usdt" style="display: none">  <img src="image/coin.png" width="600">
+          <p id="text-usdt"><b>TG6M1Z9zshCU5VFoSwaFop4gMu6bDwsP25 (TRC20)</b></p></div>
+        <div id="swift" style="display: none">
+          <img id="swift-pic" style="padding-left:50px" src="image/swift (1).png" width="300" > 
+          <p id="swift-text">
+            <b>Поповнення із-за кордону USD <br>
+            Beneficiary (Бенефіціар)</b><br>
+
+            <b>Receiver:</b><br>
+              DANYLEIKO ROMAN, 37800, Ukraine, reg. Poltavska, district. Khorolskyi, village. Novyi Bairak,
+                st. Vyshneva, build. 24<br>
+
+              <b>IBAN</b><br>
+              UA 12 322001 00000 2620 3326 5197 09<br>
+
+              <b>Account No</b><br>
+              26203326519709<br>
+              
+
+              <b>Account with Institution (Банк Бенефіціара)</b><br>
+              Bank<br>
+              JSC UNIVERSAL BANK<br>
+              City<br>
+              KYIV, UKRAINE<br>
+              
+              <b>Swift code</b><br>
+              UNJSUAUKXXX<br>
+
+
+              <b>Details of payment (Призначення платежу)</b><br>
+              <b>!!!</b> Дуже важливо правильно вказати призначення платежу.<br>
+              Виберіть потрібний варіант в залежності від того, хто відправляє вам платіж
+              якщо відправник <b>фізична особа: </b><br>
+              - private transfer<br>
+              - transfer to own account<br>
+              - help to relative<br>
+
+              якщо відправник <b> юридична особа: </b><br>
+              - honorarium<br>
+              - compensation for ...<br>
+          </p>
+        </div>
+      </div>
+      <div class="side-bar">
+          <div id="donaty-page">
+            Донати</div>
+          <div id="donation-options">
+            <p class="option"  onclick="myFunction_Mono()" >Moнобанк</p>
+            <p class="option"  onclick="myFunction_Paypal()">PayPal</p>
+            <p class="option"  onclick="myFunction_Usdt()">USDT $</p>
+            <p class="option"  onclick="myFunction_Swift()">Swift</p>
+            <script>
+              function myFunction_Mono() {
+                let monobank_button = document.getElementById("mono");
+                let paypal_button = document.getElementById("paypal");
+                let usdt_button = document.getElementById("usdt");
+                let swift_button = document.getElementById("swift");
+                if (monobank_button.style.display === "none") {
+                    monobank_button.style.display = "block";
+                    paypal_button.style.display = "none";
+                    usdt_button.style.display = "none";
+                    swift_button.style.display = "none"
+                  } 
+              }
+            </script>
+            <script>
+              function myFunction_Paypal(){
+                let monobank_button = document.getElementById("mono");
+                let paypal_button = document.getElementById("paypal");
+                let usdt_button = document.getElementById("usdt");
+                let swift_button = document.getElementById("swift");
+                if (paypal_button.style.display === "none") {
+                    monobank_button.style.display = "none";
+                    paypal_button.style.display = "block";
+                    usdt_button.style.display = "none";
+                    swift_button.style.display = "none"
+                  } 
+                }
+    
+            </script>
+            <script>
+              function myFunction_Usdt(){
+                let monobank_button = document.getElementById("mono");
+                let paypal_button = document.getElementById("paypal");
+                let usdt_button = document.getElementById("usdt");
+                let swift_button = document.getElementById("swift");
+                if (usdt_button.style.display === "none") {
+                    usdt_button.style.display = "block";
+                    monobank_button.style.display = "none";
+                    paypal_button.style.display = "none";
+                    swift_button.style.display = "none"
+                    } 
+                  }
+            </script>
+            <script>
+                function myFunction_Swift(){
+                  let monobank_button = document.getElementById("mono");
+                  let paypal_button = document.getElementById("paypal");
+                  let usdt_button = document.getElementById("usdt");
+                  let swift_button = document.getElementById("swift");
+                  if (swift_button.style.display === "none") {
+                      monobank_button.style.display = "none";
+                      paypal_button.style.display = "none";
+                      usdt_button.style.display = "none";
+                      swift_button.style.display = "block"
+                    } 
+                  }
+              </script>
+        </div>
+      
+    </div>
+  </body>
+</html>
